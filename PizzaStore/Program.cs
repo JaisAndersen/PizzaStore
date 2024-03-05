@@ -1,11 +1,13 @@
-﻿namespace PizzaStore
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace PizzaStore
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-            Console.WriteLine("ABCD");
+            Store.start();
+            Console.ReadKey();
         }
     }
 }
